@@ -58,7 +58,7 @@ const Book = () => {
       if (selectedDate && selectedTime) {
         try {
           const response = await axios.post(
-            'https://bookfieldbackend.onrender.com//book/book-field',
+            'https://bookfieldbackend.onrender.com/book/book-field',
             {
               "fieldId":id,//field id
               "bookedDate":selectedDate,
