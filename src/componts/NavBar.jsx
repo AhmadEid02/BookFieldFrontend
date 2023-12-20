@@ -27,7 +27,7 @@ const NavBar = () => {
                 (<div style={sty}>
                     <span onClick={handelDashboard} style={stye}>{user.email}</span>
                     
-                        <span class="material-symbols-outlined" onClick={logout} style={stye}>
+                        <span className="material-symbols-outlined" onClick={logout} style={stye}>
                             logout
                         </span>
                 </div>)
