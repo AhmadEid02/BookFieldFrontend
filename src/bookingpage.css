@@ -1,0 +1,106 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.field-info {
+  margin-bottom: 20px;
+}
+
+.picDate {
+  display: flex;
+  justify-content: space-between;
+  background-color: aliceblue;
+}
+
+.picDate img {
+  width: 45%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.calendar,
+.clock {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.calendar,
+.clock input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.clock {
+  background-color: white;
+}
+
+.clock select {
+  border: none;
+  margin: auto;
+  height: 100%;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.field-info-text {
+  text-align: left;
+}
+
+.field-info-text h2 {
+  margin-bottom: 10px;
+}
+
+.field-info-text p {
+  margin-bottom: 8px;
+}
+
+.timeDate {
+  display: flex;
+  flex-direction: column;
+}
+
+.confirmation-message {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.confirmation-message h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.confirmation-message p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}

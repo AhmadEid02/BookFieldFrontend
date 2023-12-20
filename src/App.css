@@ -1,0 +1,292 @@
+* {
+  font-family: 'Nova Square', sans-serif;
+  font-family: 'Outfit', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.org {
+  color: orange;
+}
+
+.contener {
+  margin: auto;
+  width: 80%;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333; /* Adjust the background color as needed */
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  margin: 0;
+}
+
+.org {
+  color: orange; /* Or any other color you prefer */
+}
+
+.log {
+  display: flex;
+  gap: 10px;
+}
+
+.log a {
+  text-decoration: none;
+  color: white; /* Or any other color you prefer */
+}
+
+.login,
+.signup {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login form,
+.signup form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+nav h1 {
+  font-size: 1.5rem;
+}
+
+.material-symbols-outlined {
+  font-size: 1.6rem;
+}
+
+.sports,
+.news {
+  flex-direction: column;
+  gap: 13px;
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 35px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.sport {
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.sport:hover {
+  background-color: #ddd;
+  /* Change the background color on hover */
+  color: orange;
+  /* Change the text color on hover */
+}
+
+.fleids {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.news,
+.sports {
+  flex-direction: row;
+}
+
+
+.new,
+.sport {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.sport {
+  align-items: center;
+}
+
+.theam {
+  background-color: #333;
+  color: white;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+button {
+  background-color: #FF6347;
+  /* Change the button color to your preference */
+  color: white;
+  /* Change the text color to your preference */
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+/* Horizontal Card styles */
+.horizontal-card {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0px;
+  
+  width: 100%;
+}
+
+.horizontal-card img {
+  max-width: 100%;
+  width: 30%;
+  /* Adjust the max-width as needed */
+  object-fit: cover;
+}
+
+.horizontal-card-content {
+  flex: 1;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 8px;
+}
+
+/* Additional styles for specific information */
+.rating {
+  color: #FF6347;
+  /* Orange color for the rating */
+  font-weight: bold;
+}
+
+.address {
+  font-style: italic;
+}
+
+.pitch-type {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.capacity {
+  margin-top: 10px;
+}
+
+/* Button styles */
+.book-now-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.book-now-button:hover {
+  background-color: #45a049;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #f44336;
+  margin-top: 10px;
+}
+.containe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  /* background-color: #fff; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  border-radius: 8px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+
+  }
+
+  .sports {
+    flex-wrap: wrap;
+  }
+
+  .news,
+  .theam,
+  .horizontal-card {
+    flex-direction: column;
+  }
+
+  .horizontal-card img {
+    width: 100%;
+
+  }
+
+
+}
