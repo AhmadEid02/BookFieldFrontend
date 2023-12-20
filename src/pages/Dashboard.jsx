@@ -9,7 +9,7 @@ const Dashboard = () => {
   const featchData = async () => {
     if (user) {
       const response = await axios.get(
-        'http://localhost:4000/book/booked',
+        'https://bookfieldbackend.onrender.com//book/booked',
         {
           headers: {
             Authorization: `Bearer ${user.token}`,
