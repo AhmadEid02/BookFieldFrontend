@@ -18,7 +18,7 @@ const Signup = () => {
         setError("fill Password field")
         return
       }
-      const response = await axios.post("http://localhost:4000/user/signup", { email, password });
+      const response = await axios.post("https://bookfieldbackend.onrender.com/user/signup", { email, password });
       localStorage.setItem('user', JSON.stringify(response.data));
       
       navigate('/')
