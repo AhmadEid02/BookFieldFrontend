@@ -7,7 +7,7 @@ export const Home = () => {
   const [fields,setFields]=useState([])
   const [sport,setSport]=useState("All")
   const fetchData = async () => {
-    const response = await axios.get("http://localhost:4000/api/fields");
+    const response = await axios.get("https://bookfieldbackend.onrender.com/api/fields");
     setFields(response.data);
   };
   
