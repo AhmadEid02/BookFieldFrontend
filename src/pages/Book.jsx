@@ -122,7 +122,7 @@ const Book = () => {
         </div>
 
         <div className="picDate">
-          <img src="../assets/field-pic.jpg" alt="" />
+          <img src={`../assets/${fieldData?.pitchType}-field.jpg`} alt="" />
           <div className="timeDate">
             <div className="calendar">
               <input type="date" value={selectedDate || today()} onChange={handleDateChange} min={today()} />
