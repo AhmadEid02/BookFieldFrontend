@@ -32,7 +32,7 @@ const Book = () => {
   }
 
   const fetchData = async () => {
-    const response = await axios.get(`http://localhost:4000/api/fields/${id}`);
+    const response = await axios.get(`https://bookfieldbackend.onrender.com/api/fields/${id}`);
     setFieldData(response.data);
     console.log(fieldData)
   };
@@ -58,7 +58,7 @@ const Book = () => {
       if (selectedDate && selectedTime) {
         try {
           const response = await axios.post(
-            'http://localhost:4000/book/book-field',
+            'https://bookfieldbackend.onrender.com//book/book-field',
             {
               "fieldId":id,//field id
               "bookedDate":selectedDate,
